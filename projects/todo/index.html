@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <title>Todo MVC</title>
+  <meta charset=utf-8>
+  <meta name=viewport content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="todo App created by Now.js Javascript MVC Framework">
+  <link rel="shortcut icon" href="../../favicon.ico">
+</head>
+
+<body>
+  <section id="todoapp">
+    <header id="header">
+      <h1>todos</h1>
+      <input id="new-todo" placeholder="What needs to be done?" autofocus>
+    </header>
+    <section id="main">
+      <input id="toggle-all" type="checkbox">
+      <label for="toggle-all">Mark all as complete</label>
+      <ul id="todo-list"></ul>
+    </section>
+    <footer id="footer">
+      <span id="todo-count"><strong>0</strong> item left</span>
+      <button id="clear-completed">Clear completed (<strong>0</strong>)</button>
+    </footer>
+  </section>
+  <footer id="info">
+    <h2>TodoMVC with Now.js JavaScript MVC Framework</h2>
+    <p>Created by <a href="https://goragod.com">Goragod Wiriya</a></p>
+    <p>Part of <a href="http://nowjs.goragod.com">Now.js</a></p>
+  </footer>
+  <script src="../../vendor/now/now.js"></script>
+  <script src="modules/index.js"></script>
+  <link href="./skin/style.css" rel='stylesheet' type='text/css'>
+</body>
+
+</html>

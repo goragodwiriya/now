@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <title>Now.js</title>
+  <meta charset=utf-8>
+  <meta name=viewport content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="หน้าต้อนรับ ของ Now.js">
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <style>
+    body,
+    html {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      font-family: Kodchasan, Tahoma, Loma;
+      color: #666;
+    }
+    
+    #content {
+      text-align: center;
+      height: 50%;
+    }
+    
+    .warper {
+      display: inline-block;
+      height: 50%;
+    }
+    
+    .warper:before,
+    #content::before {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      width: 0px;
+    }
+    
+    h1:before {
+      display: block;
+      margin: 0;
+      font-size: 3em;
+      line-height: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="content">Loading...</div>
+  <script src="../../vendor/now/now.js"></script>
+  <script src="modules/index.js"></script>
+  <link href="../../skin/fonts.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Kodchasan" rel="stylesheet">
+</body>
+
+</html>
