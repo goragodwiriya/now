@@ -1,7 +1,7 @@
   Now.createWebApplication({
     init: function() {
       /* โหลดเมนู */
-      Now.Ajax.create({ asynchronous: false }).send('https://oas.kotchasan.com/api.php/categories', null, function(xhr) {
+      Now.Ajax.create({ asynchronous: false, method: 'get' }).send('https://oas.kotchasan.com/api.php/v1/product/categories', null, function(xhr) {
         var ds = xhr.responseText.toJSON();
         if (ds) {
           var menu = $('#categorymenu'),
