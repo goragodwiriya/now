@@ -6,7 +6,7 @@ Now.controller('Index/Index/Controller', {
    */
   index: function(params) {
     var self = this;
-    Now.Ajax.create({ method: 'get' }).send("https://oas.kotchasan.com/api.php/products/" + (params.cat || Now.category_id) + "/" + (params.page || 1), "limit=20", function(xhr) {
+    Now.Ajax.create({ method: 'get' }).send("https://oas.kotchasan.com/api.php/v1/product/products/" + (params.cat || Now.category_id) + "/" + (params.page || 1), "limit=20", function(xhr) {
       // แปลงข้อมูลตอบกลับเป็น JSON Object
       var ds = xhr.responseText.toJSON(),
         detail = "",
